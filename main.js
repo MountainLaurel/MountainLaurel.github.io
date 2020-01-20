@@ -40,9 +40,7 @@ function setup() {
 	video = createCapture({
 		audio: false,
 		video: {
-			facingMode: {
-				deviceID: "environment"
-			}
+			facingMode: "environment"
   		}
 	});
 	video.hide();
