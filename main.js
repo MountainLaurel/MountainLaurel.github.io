@@ -78,7 +78,7 @@ function draw() {
 	text(topLabel, width / 2, height - 4);**/
 	//adds scan results to a list if a scan is currently working
   if(scanOn){
-	if(scanCount <= 10) {
+	if(scanCount <= 30) {
 		classifyVideo();
 	} else {
 		//Sort scanResults and find the mode
