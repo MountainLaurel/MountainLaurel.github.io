@@ -10,7 +10,6 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/ptzjyXSV/';
   
 // Video
 let video;
-var constraints = { video: { facingMode: "user" }, audio: false };
 
 // To store the classification
 let label = "";
@@ -38,7 +37,14 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.parent('jssketch');
 	// Create the video
-	video = createCapture(VIDEO);
+	video = createCapture({
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }
+  });
 	video.hide()
 	//watch for screen resize
 	window.addEventListener("resize", function(){
