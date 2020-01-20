@@ -10,6 +10,7 @@ let imageModelURL = 'https://teachablemachine.withgoogle.com/models/ptzjyXSV/';
   
 // Video
 let video;
+var constraints = { video: { facingMode: "user" }, audio: false };
 
 // To store the classification
 let label = "";
