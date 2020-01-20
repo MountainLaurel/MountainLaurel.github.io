@@ -38,13 +38,13 @@ function setup() {
 	canvas.parent('jssketch');
 	// Create the video
 	video = createCapture({
-    		audio: false,
-    		video: {
-      			facingMode: {
-        			exact: "environment"
-      			}
-    		}
-  	});
+		audio: false,
+		video: {
+			facingMode: {
+				deviceID: "environment"
+			}
+  		}
+	});
 	video.hide();
 	if(windowWidth < windowHeight) {
   		resizeCanvas(windowWidth, video.height*windowWidth/video.width);
