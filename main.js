@@ -37,14 +37,7 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.parent('jssketch');
 	// Create the video
-	video = createCapture({
-    audio: false,
-    video: {
-      facingMode: {
-        exact: "environment"
-      }
-    }
-  });
+	video = createCapture(VIDEO);
 	video.hide()
 	//watch for screen resize
 	window.addEventListener("resize", function(){
