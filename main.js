@@ -45,12 +45,21 @@ function setup() {
       			}
     		}
   	});
-	video.hide()
+	video.hide();
+	if(windowWidth < windowHeight) {
+  		resizeCanvas(windowWidth, video.height*windowWidth/video.width);
+	} else {
+		resizeCanvas(video.width*windowHeight/video.height, windowHeight);
+	}
 	//watch for screen resize
 	window.addEventListener("resize", function(){
 		windowWidth = window.innerWidth;
 		windowHeight = window.innerHeight;
-		resizeCanvas(windowWidth, windowHeight);
+		if(windowWidth < windowHeight) {
+  			resizeCanvas(windowWidth, video.height*windowWidth/video.width);
+		} else {
+			resizeCanvas(video.width*windowHeight/video.height, windowHeight);
+		}
 	});	
 }
 
