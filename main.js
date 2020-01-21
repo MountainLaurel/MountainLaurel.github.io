@@ -5,8 +5,8 @@ TODO
 
 // Classifier Variable
 let classifier;
-// Model URL
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/ptzjyXSV/';
+// Model URL V3
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/qPSmBJdu/';
   
 // Video
 let video;
@@ -118,7 +118,7 @@ function draw() {
 			document.getElementById("info").innerHTML = label;
 		} else if(label == "Church") {
 			document.getElementById("info").innerHTML = label;
-		} else if(label == "Nexus") {
+		} else if(label == "Stone Building") {
 			document.getElementById("info").innerHTML = label;
 		} else if(label == "Brick Building") {
 			document.getElementById("info").innerHTML = label;
