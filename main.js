@@ -122,6 +122,8 @@ function draw() {
 			document.getElementById("info").innerHTML = label;
 		} else if(label == "Brick Building") {
 			document.getElementById("info").innerHTML = label;
+		} else if(label == "") {
+			document.getElementById("info").innerHTML = "Sorry, it appears your device does not work with this app at the moment. Please stay tuned for future updates!";
 		} else {
 			document.getElementById("info").innerHTML = label + ", no information recorded";
 		}
