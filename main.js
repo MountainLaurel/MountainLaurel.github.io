@@ -105,7 +105,7 @@ function draw() {
 		if(label == "Courthouse") {
 			document.getElementById("info").innerHTML = "Harrisonburg Rockingham Courthouse<br>80 Court Square";
 		} else if(label == "Capital Ale House") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "41 Court Square<br>Currently Capital Ale House and other businesses";
 		} else if(label == "Larkin Arts") {
 			document.getElementById("info").innerHTML = "Denton Building<br>61 Court Square<br>Currently Larkin Arts";
 		} else if(label == "Bank") {
@@ -113,15 +113,15 @@ function draw() {
 		} else if(label == "HCPS") {
 			document.getElementById("info").innerHTML = "1 Court Square<br>Currently Harrisonburg City Public Schools";
 		} else if(label == "Judicial Center") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "53 Court Square<br>Currently Harrisonburg General District Court";
 		} else if(label == "Springhouse") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "Springhouse";
 		} else if(label == "Church") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "17 Court Square<br>Currently First Presbyterian Church";
 		} else if(label == "Stone Building") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "2 N Main Street";
 		} else if(label == "Brick Building") {
-			document.getElementById("info").innerHTML = label;
+			document.getElementById("info").innerHTML = "20 N Main Street";
 		} else if(label == "") {
 			document.getElementById("info").innerHTML = "Sorry, it appears your device does not work with this app at the moment. Please stay tuned for future updates!";
 		} else {
